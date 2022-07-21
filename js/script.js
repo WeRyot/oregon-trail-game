@@ -339,7 +339,7 @@ function updateStats() {
   if (caravan.medicine <= 0) {
     medString = "<span id='foodZero'>Medicine: 0</span>";
   } else {
-    medString = "Xanax: " + caravan.medicine;
+    medString = "Beer: " + caravan.medicine;
   }
   $(".medicine").html(medString);
 }
@@ -361,7 +361,7 @@ $(function() {
     var char5 = new Character(member4);
     caravan.party.push(char1, char2, char3, char4, char5);
 
-    var autoNames = ["Ryan", "Gloria", "Riley", "Megan", "Chris", "Colin", "Blake", "Grace", "Ben", "Mark", "Liam", "Shane", "Christian", "Chance", "Oliver", "Evan", "Perry", "Dallas", "Alex", "Xi Xia", "Jahan", "Kaya", "Josh", "Nathaniel", "Janek", "Clifford", "Cameron", "Keith", "Pizza", "Stormi"];
+    var autoNames = ["rightclickable", "Zod", "NeuroD", "Mooshoofasa", "rita", "Sherpa", "BittyMcBitface", "notsofast", "dum", "Gizmo14801", "Euclid", "Mystical Oaks", "Wendy O", "Fomoby", "Buck Rooney", "Xico", "Crapto", "Beagle", "Mack", "Mr Bada Bing", "Elypse", "HULK CAPITAL", "Bitcephus", "Round Cat", "SBF", "Future Perfect", "Dressy", "Vitalik", "Supreme Pizza", "Brian Legweak"];
     caravan.party.forEach(function(member) {
       if (!member.name) {
         var index = rollNumber(0, autoNames.length);
